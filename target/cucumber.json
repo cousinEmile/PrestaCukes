@@ -1,0 +1,145 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3967822987,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "that user is on the homepage",
+            "match": {
+              "location": "Login_MyAccountStepDefinitions.that_user_is_on_the_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1334499096,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user selects the sign-in link",
+            "match": {
+              "location": "Login_MyAccountStepDefinitions.user_selects_the_sign_in_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1323471665,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enters valid credentials",
+            "match": {
+              "location": "Login_MyAccountStepDefinitions.enters_valid_credentials()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "",
+        "description": "",
+        "id": "login---my-addresses;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 566645685,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user selects My Addresses",
+            "match": {
+              "location": "Login_MyAddressesStepDefinitions.user_selects_My_Addresses()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 509629710,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user selects Add a new address",
+            "match": {
+              "location": "Login_MyAddressesStepDefinitions.user_selects_Add_a_new_address()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36707009,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "first and last name should match username on header",
+            "match": {
+              "location": "Login_MyPersonalInformationStepDefinitions.first_and_last_name_should_match_username_on_header()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36988045,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user deletes the first name",
+            "match": {
+              "location": "Login_MyAddressesStepDefinitions.user_deletes_the_first_name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 558476890,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clicks save",
+            "match": {
+              "location": "Login_MyAddressesStepDefinitions.clicks_save()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22070991,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "error message should contain MYADDRESS_ERROR",
+            "match": {
+              "location": "Login_MyAddressesStepDefinitions.error_message_should_contain_MYADDRESS_ERROR()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@myAddress"
+          }
+        ]
+      }
+    ],
+    "name": "Login - My Addresses",
+    "description": "",
+    "id": "login---my-addresses",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login_myAddresses.feature",
+    "tags": []
+  }
+]
