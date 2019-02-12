@@ -12,11 +12,14 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json"
         },
 
-        features = "src/test/resources/features",
-        glue = "com/prestacukes/step_definitions"
-        , dryRun = false
-        , tags = "@registration"
+        features = "src/test/resources/olympics",
+        glue = "com/prestacukes/olympic_steps"
+        , dryRun = true
+        , tags = "@sort"
 )
-public class CukesRunner {
+public class UsainBolt{
 
 }
+
+
+

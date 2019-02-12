@@ -1,43 +1,8 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/login_myAddresses.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/olympics/sortTest.feature");
 formatter.feature({
-  "name": "Login - My Addresses",
+  "name": "Sort Test",
   "description": "",
   "keyword": "Feature"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.step({
-  "name": "that user is on the homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "Login_MyAccountStepDefinitions.that_user_is_on_the_homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user selects the sign-in link",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Login_MyAccountStepDefinitions.user_selects_the_sign_in_link()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "enters valid credentials",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Login_MyAccountStepDefinitions.enters_valid_credentials()"
-});
-formatter.result({
-  "status": "passed"
 });
 formatter.scenario({
   "name": "",
@@ -45,68 +10,48 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@myAddress"
+      "name": "@sort"
     }
   ]
 });
 formatter.step({
-  "name": "user selects My Addresses",
+  "name": "that user is at homepage",
   "keyword": "Given "
 });
-formatter.match({
-  "location": "Login_MyAddressesStepDefinitions.user_selects_My_Addresses()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user selects Add a new address",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "Login_MyAddressesStepDefinitions.user_selects_Add_a_new_address()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "first and last name should match username on header",
+  "name": "verify that Medal Table is sorted by rank",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "Login_MyPersonalInformationStepDefinitions.first_and_last_name_should_match_username_on_header()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "user deletes the first name",
+  "name": "user clicks NOC link",
   "keyword": "When "
 });
-formatter.match({
-  "location": "Login_MyAddressesStepDefinitions.user_deletes_the_first_name()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
-  "name": "clicks save",
+  "name": "table should be sorted by country names",
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "Rank column is not in ascending order anymore",
   "keyword": "And "
 });
-formatter.match({
-  "location": "Login_MyAddressesStepDefinitions.clicks_save()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "error message should contain MYADDRESS_ERROR",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "Login_MyAddressesStepDefinitions.error_message_should_contain_MYADDRESS_ERROR()"
-});
-formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 });

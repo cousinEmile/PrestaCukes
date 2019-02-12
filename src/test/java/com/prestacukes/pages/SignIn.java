@@ -19,16 +19,16 @@ public class SignIn  {
     @FindBy ( xpath = "//input[@class='is_required validate account_input form-control']" )    //sendkeys
     public WebElement createAccountBox;
 
-    @FindBy ( css = "#SubmitCreate" )   //click
+    @FindBy ( css = "button#SubmitCreate" )   //click
     public WebElement createAccountButton;
 
-    @FindBy ( css = "#email" )
+    @FindBy ( css = "input#email" )
     public WebElement registeredEmailBox;
 
     @FindBy ( xpath = "//input[@id='passwd']" )
     public WebElement registeredPassword;
 
-    @FindBy ( css = "#SubmitLogin" )
+    @FindBy ( css = "button#SubmitLogin" )
     public WebElement signInButton;
 
     public void loginWithParams ( String username , String password ) {
